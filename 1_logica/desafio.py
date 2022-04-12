@@ -1,5 +1,3 @@
-# Python program to print connected
-# components in an undirected graph
 class Graph:
 
     # init function to declare class variables

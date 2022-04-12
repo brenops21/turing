@@ -18,13 +18,15 @@ def inversion(string):
 
 def corrige_emails(emails):
     dominio = "@usp.br"
+    lista = []
 
     for k in range(len(emails)):
         str_correct = inversion(emails[k])
         if dominio not in str_correct:
             str_correct = "ERRO"
+        lista.append(str_correct)
 
-        print([str_correct], end=" ")
+    print(lista, end=" ")
 
 
 
